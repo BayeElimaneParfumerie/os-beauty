@@ -1,5 +1,5 @@
-/* Général */
-* {
+
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -127,5 +127,99 @@ footer {
 
     .hero h2 {
         font-size: 38px;
+    }
+}
+/* =========================
+   PAGE SERVICES
+========================= */
+
+.services-page {
+    padding: 80px 8%;
+    background: #f8f5f3;
+    min-height: 600px;
+}
+
+.services-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.services-intro h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #2b2020;
+}
+
+.services-intro p {
+    font-size: 18px;
+    color: #6d6262;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.service-card {
+    background: white;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+    font-size: 23px;
+    color: #2b2020;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #716666;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    background: #2b2020;
+    color: white;
+    padding: 25px;
+}
+
+
+/* =========================
+   VERSION MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-intro h2 {
+        font-size: 35px;
+    }
+
+    .services-page {
+        padding: 60px 5%;
     }
 }
