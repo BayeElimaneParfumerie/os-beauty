@@ -1,5 +1,4 @@
-
- {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +10,10 @@ body {
     color: #2b2020;
 }
 
-/* En-tête */
+/* =========================
+   EN-TÊTE
+========================= */
+
 header {
     background-color: #2b2020;
     color: white;
@@ -31,7 +33,10 @@ header p {
     letter-spacing: 2px;
 }
 
-/* Menu */
+/* =========================
+   MENU
+========================= */
+
 nav {
     margin-top: 25px;
 }
@@ -41,25 +46,33 @@ nav a {
     text-decoration: none;
     margin: 0 12px;
     font-size: 15px;
+    transition: 0.3s;
 }
 
 nav a:hover {
     color: #d6a77a;
 }
 
-/* Grande section */
+/* =========================
+   GRANDE SECTION ACCUEIL
+========================= */
+
 .hero {
     min-height: 600px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     text-align: center;
     padding: 40px 20px;
+
     background: linear-gradient(
         rgba(43, 32, 32, 0.45),
         rgba(43, 32, 32, 0.45)
     );
+
     color: white;
 }
 
@@ -73,22 +86,35 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-/* Bouton */
+/* =========================
+   BOUTON
+========================= */
+
 .button {
     display: inline-block;
+
     background-color: #d6a77a;
     color: white;
+
     padding: 14px 30px;
+
     text-decoration: none;
     border-radius: 30px;
+
     font-weight: bold;
+
+    transition: 0.3s;
 }
 
 .button:hover {
     background-color: #b98558;
+    transform: translateY(-2px);
 }
 
-/* Bienvenue */
+/* =========================
+   SECTION BIENVENUE
+========================= */
+
 .welcome {
     text-align: center;
     padding: 80px 20px;
@@ -105,39 +131,17 @@ nav a:hover {
     line-height: 1.8;
 }
 
-/* Pied de page */
-footer {
-    background-color: #2b2020;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-/* Téléphone */
-@media (max-width: 768px) {
-
-    header h1 {
-        font-size: 32px;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 7px;
-    }
-
-    .hero h2 {
-        font-size: 38px;
-    }
-}
 /* =========================
    PAGE SERVICES
 ========================= */
 
 .services-page {
     padding: 80px 8%;
-    background: #f8f5f3;
+    background-color: #f8f5f3;
     min-height: 600px;
 }
+
+/* Introduction */
 
 .services-intro {
     text-align: center;
@@ -153,63 +157,100 @@ footer {
 .services-intro p {
     font-size: 18px;
     color: #6d6262;
+
     max-width: 650px;
     margin: auto;
+
     line-height: 1.7;
 }
 
+/* Cartes */
+
 .services-container {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 30px;
+
     max-width: 1100px;
+
     margin: auto;
 }
 
 .service-card {
-    background: white;
+    background-color: white;
+
     padding: 35px 25px;
+
     text-align: center;
+
     border-radius: 15px;
+
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
     transition: 0.3s;
 }
 
 .service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .service-card h3 {
     font-size: 23px;
+
     color: #2b2020;
+
     margin-bottom: 15px;
 }
 
 .service-card p {
     color: #716666;
+
     line-height: 1.7;
+
     font-size: 16px;
 }
 
-
 /* =========================
-   FOOTER
+   PIED DE PAGE
 ========================= */
 
 footer {
-    text-align: center;
-    background: #2b2020;
+    background-color: #2b2020;
+
     color: white;
+
+    text-align: center;
+
     padding: 25px;
 }
 
-
 /* =========================
-   VERSION MOBILE
+   VERSION TÉLÉPHONE
 ========================= */
 
 @media (max-width: 800px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
 
     .services-container {
         grid-template-columns: 1fr;
